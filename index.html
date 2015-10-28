@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <meta name=”keywords” content=”Ruby,Ruby on Rails,プログラミング,web”>
+    <title>Tomoya Matsuura Portfolio</title>
+    
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -16,16 +18,30 @@
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     
+    <script language="JavaScript" type="text/JavaScript">
+    $(function(){
+      $('a[href^=#]').click(function(){
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing")
+        return false;
+      });
+    });
+    </script>
   </head>
+  
   <body>
+    <div id="top"></div>
     <header>
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1" >
           <nav>
             <ul>Portfolio |
-              <li><a href="#">About</a></li>
-              <li><a href="#">Works</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#works">Works</a></li>
             </ul>
           </nav>
         </div>
@@ -39,8 +55,9 @@
       </div>
     </div>
     </header>
-    <hr />
     
+    <div id="works"></div>
+    <hr />
     <section>
       <div class="container-fluid">
         <div class="row">
@@ -49,12 +66,12 @@
           </div>
           <div class="col-sm-1 hidden-xs" ></div>
         </div> 
-       
+        
         <!-- work1 -->
         <div class="row">  
           <div class="col-sm-1" >_28.Oct.15</div>
           <div class="col-sm-7" >
-            <img src="work1.png" class="workimg" width="450" alt="sample work1">
+            <img src="work1.png" class="img-responsive workimg" width="450" alt="sample work1">
           </div>
           <div class="col-sm-3" >
             <h2>Ruby on Rails</h2>
@@ -65,13 +82,16 @@
           </div>
           <div class="col-sm-1" ><hr /></div>
         </div>
-        <br /><br />
+        <br />
+        <br />
+        <br />
+        <br />
         
         <!-- work2 -->
         <div class="row">
           <div class="col-sm-1" >_28.Oct.15</div>
           <div class="col-sm-7" >
-            <img src="work2.png" class="workimg" width="450" alt="sample work1">
+            <img src="work2.png" class="img-responsive workimg" width="450" alt="sample work2">
           </div>
           <div class="col-sm-3" >
             <h2>Ruby on Rails</h2>
@@ -82,13 +102,16 @@
           </div>
           <div class="col-sm-1" ><hr /></div>
         </div>
-        <br /><br />
+        <br />
+        <br />
+        <br />
+        <br />
         
         <!-- work3 -->
         <div class="row">
           <div class="col-sm-1" >_28.Oct.15</div>
           <div class="col-sm-7" >
-            <img src="work3.png" class="workimg" width="450" alt="sample work1">
+            <img src="work3.png" class="img-responsive workimg" width="450" alt="sample work3">
           </div>
           <div class="col-sm-3" >
             <h2>Ruby on Rails</h2>
@@ -99,13 +122,16 @@
           </div>
           <div class="col-sm-1" ><hr /></div>
         </div>
-        <br /><br />
+        <br />
+        <br />
+        <br />
+        <br />
         
         <!-- work4 -->
         <div class="row">
           <div class="col-sm-1" >_28.Oct.15</div>
           <div class="col-sm-7" >
-            <img src="work4.png" class="workimg" width="450" alt="sample work1">
+            <img src="work4.png" class="img-responsive workimg" width="450" alt="sample work4">
           </div>
           <div class="col-sm-3" >
             <h2>Ruby on Rails</h2>
@@ -117,9 +143,52 @@
           <div class="col-sm-1" ><hr /></div>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+    
+    <!-- about  -->
+    <div id="about"></div>
+    <hr />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1" >
+            <h1><strong>About</strong></h1>
+          </div>
+          <div class="col-sm-1 hidden-xs" ></div>
+        </div>
+  
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-1" >
+            <h2>TOMOYA MATSUURA</h2>
+            <p>test:testtesttesttesttesttesttesttesttesttesttesttest<br />
+               sttesttesttesttesttesttest<br />
+               test:testtesttestteststtesttesttesttest<br />
+            </p>
+            <p><a href="https://github.com/tm0221">github</a></p>
+          </div>
+          <div class="col-sm-7" >
+            <img src="bg.jpg" class="img-responsive" alt="sample work1">
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        
+        <div class="row">
+          <div class="col-sm-1 hidden-xs">
+            <a href="#top"><img src="icon1.png" width="40"></a>
+          </div>
+          <div class="col-sm-11"></div>
+        </div> 
+      </div>
+      <br />
+      <hr />
     </section>
     
-    <br><br><br><br>
-    <footer style="background-color:gray">Footer</footer>
+    <footer >
+      <p>© 2015 Tomoya Matsuura All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
