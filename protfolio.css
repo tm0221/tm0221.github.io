@@ -13,7 +13,7 @@ body {
 header h1 {
     margin:80px 0 0 0;
     letter-spacing: -0.06em;
-    font-size:25px;
+    font-size:26px;
     color:#000;
 }
 header h2 {
@@ -26,16 +26,21 @@ section h1 {
     font-family: 'Open Sans Condensed', sans-serif;
     margin:-10px 0 40px 0;
     letter-spacing: 0.2em;
-    font-size:30px;
+    font-size:34px;
     color:#000;
 }
 section h2 {
     letter-spacing: 0.1em;
+    font-size:34px;
+    color:#222;
+}
+section h2 {
+    letter-spacing: -0.01em;
     font-size:30px;
     color:#222;
 }
 section p {
-    font-size: 11px;
+    font-size: 12px;
 }
 section p a {
     text-decoration: none;
@@ -50,15 +55,16 @@ section p a:hover {
     text-decoration: none;
 }
 
-
 footer p {
     text-align: center;
-    font-size: 10px;
+    font-size: 11px;
     color:#666;
 }
+
 nav {
     margin:0;
     text-align: left;
+    font-size: 11px;
 }
 nav ul li {
     margin: 0 2px;
